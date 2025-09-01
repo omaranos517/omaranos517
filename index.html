@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omar Anoss</title>
+    <title>Omar Anoss - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
@@ -91,6 +91,23 @@
             height: 5px;
             background: var(--gradient);
             border-radius: 3px;
+        }
+        
+        /* شريط تقدم التمرير */
+        .progress-container {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 4px;
+            background: transparent;
+            z-index: 1001;
+        }
+        
+        .progress-bar {
+            height: 4px;
+            background: var(--gradient);
+            width: 0%;
+            transition: width 0.3s ease;
         }
         
         /* الشريط العلوي مع تأثيرات */
@@ -614,6 +631,46 @@
             color: #ccc;
         }
         
+        /* قسم services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .service-item {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .service-item:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: white;
+            font-size: 1.8rem;
+        }
+        
+        .service-item h3 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
         /* قسم contact */
         .contact-content {
             display: flex;
@@ -801,6 +858,10 @@
                 flex-direction: column;
             }
             
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
             .hero-text h1 {
                 font-size: 2.8rem;
             }
@@ -977,9 +1038,34 @@
         .dark-mode .skill-bar {
             background: #2c3e50;
         }
+        
+        /* تأثير الكتابة */
+        .typewriter {
+            overflow: hidden;
+            border-right: .15em solid var(--secondary-color);
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em;
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        }
+        
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: var(--secondary-color); }
+        }
     </style>
 </head>
 <body>
+    <!-- شريط تقدم التمرير -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
     <!-- الشريط العلوي -->
     <header>
         <div class="container">
@@ -994,6 +1080,7 @@
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#home" lang="ar">الرئيسية</a><a href="#home" lang="en">Home</a></li>
                     <li><a href="#about" lang="ar">عنّي</a><a href="#about" lang="en">About</a></li>
+                    <li><a href="#services" lang="ar">خدماتي</a><a href="#services" lang="en">Services</a></li>
                     <li><a href="#portfolio" lang="ar">أعمالي</a><a href="#portfolio" lang="en">Portfolio</a></li>
                     <li><a href="#contact" lang="ar">اتصل بي</a><a href="#contact" lang="en">Contact</a></li>
                     <li>
@@ -1024,17 +1111,17 @@
                 <div class="hero-text">
                     <h1 lang="ar">مرحباً، أنا <span style="background: var(--gradient); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent;">عمر عنوس</span></h1>
                     <h1 lang="en">Hello, I'm <span style="background: var(--gradient); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent;">Omar Anoss</span></h1>
-                    <p lang="ar">
+                    <p lang="ar" class="typewriter">
                         مطور ويب ومبرمج Python من مصر، عمري 16 سنة. 
                     </p>
-                    <p lang="en">
+                    <p lang="en" class="typewriter">
                         A 16-year-old web developer and Python programmer from Egypt.
                     </p>
                     <a href="#portfolio" class="btn" lang="ar">أعمالي</a>
                     <a href="#portfolio" class="btn" lang="en">My Work</a>
                 </div>
                 <div class="hero-image">
-                    <img src="profile.jpg" alt="صورة شخصية" loading="lazy">
+                    <img src="profile.jpg" alt="صورة شخصية" loading="lazy" width="350" height="350">
                 </div>
             </div>
         </div>
@@ -1122,6 +1209,43 @@
         </div>
     </section>
 
+    <!-- قسم الخدمات -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title" lang="ar">خدماتي</h2>
+            <h2 class="section-title" lang="en">My Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 lang="ar">تطوير الويب</h3>
+                    <h3 lang="en">Web Development</h3>
+                    <p lang="ar">تصميم وتطوير مواقع ويب متجاوبة وسريعة باستخدام أحدث التقنيات</p>
+                    <p lang="en">Design and development of responsive and fast websites using the latest technologies</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 lang="ar">تطبيقات الجوال</h3>
+                    <h3 lang="en">Mobile Applications</h3>
+                    <p lang="ar">تصميم واجهات مستخدم جذابة وسهلة الاستخدام لتطبيقات الجوال</p>
+                    <p lang="en">Design attractive and user-friendly interfaces for mobile applications</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 lang="ar">قواعد البيانات</h3>
+                    <h3 lang="en">Database Design</h3>
+                    <p lang="ar">تصميم وإدارة قواعد البيانات بكفاءة وأمان</p>
+                    <p lang="en">Efficient and secure database design and management</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- قسم الأعمال -->
     <section id="portfolio" class="portfolio">
         <div class="container">
@@ -1130,7 +1254,7 @@
             <div class="portfolio-grid">
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/600x400" alt="مشروع 1" loading="lazy">
+                        <img src="https://via.placeholder.com/600x400" alt="مشروع 1" loading="lazy" width="600" height="400">
                     </div>
                     <div class="portfolio-info">
                         <h3 lang="ar">تصميم متجر إلكتروني</h3>
@@ -1141,7 +1265,7 @@
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/600x400" alt="مشروع 2" loading="lazy">
+                        <img src="https://via.placeholder.com/600x400" alt="مشروع 2" loading="lazy" width="600" height="400">
                     </div>
                     <div class="portfolio-info">
                         <h3 lang="ar">تطبيق جوال</h3>
@@ -1152,7 +1276,7 @@
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/600x400" alt="مشروع 3" loading="lazy">
+                        <img src="https://via.placeholder.com/600x400" alt="مشروع 3" loading="lazy" width="600" height="400">
                     </div>
                     <div class="portfolio-info">
                         <h3 lang="ar">موقع شركة</h3>
@@ -1200,7 +1324,7 @@
                             <h3 lang="ar">العنوان</h3>
                             <h3 lang="en">Address</h3>
                             <p lang="ar">الاسكندرية، مصر</p>
-                            <p lang="en">Alex, Egypt</p>
+                            <p lang="en">ِAlex, Egypt</p>
                         </div>
                     </div>
                 </div>
@@ -1245,8 +1369,13 @@
     </footer>
 
     <script>
-        // كود جافاسكريبت بسيط لتغيير لون الشريط العلوي عند التمرير
+        // شريط تقدم التمرير
         window.addEventListener('scroll', function() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+            
             const header = document.querySelector('header');
             if (window.scrollY > 50) {
                 header.style.background = 'var(--header-bg)';
