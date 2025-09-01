@@ -23,6 +23,8 @@
             --gradient-secondary: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
             --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             --shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.15);
+            --success-color: #2ecc71;
+            --error-color: #e74c3c;
         }
 
         /* الوضع الداكن */
@@ -119,6 +121,7 @@
             text-decoration: none;
             position: relative;
             padding: 5px 0;
+            z-index: 1001;
         }
         
         .logo::after {
@@ -177,6 +180,17 @@
         
         .nav-links a:hover {
             color: var(--secondary-color);
+        }
+        
+        /* قائمة الجوال */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 1001;
         }
         
         /* أزرار التحكم */
@@ -649,6 +663,7 @@
         
         .form-group {
             margin-bottom: 25px;
+            position: relative;
         }
         
         .form-group label {
@@ -678,6 +693,27 @@
         textarea.form-control {
             min-height: 150px;
             resize: vertical;
+        }
+        
+        .form-message {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+        
+        .form-message.success {
+            background-color: rgba(46, 204, 113, 0.2);
+            color: var(--success-color);
+            border: 1px solid var(--success-color);
+            display: block;
+        }
+        
+        .form-message.error {
+            background-color: rgba(231, 76, 60, 0.2);
+            color: var(--error-color);
+            border: 1px solid var(--error-color);
+            display: block;
         }
         
         /* footer */
@@ -778,28 +814,65 @@
                 width: 280px;
                 height: 280px;
             }
-        }
-        
-        @media (max-width: 768px) {
+            
             .nav-links {
-                display: none;
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                height: 100vh;
+                background: var(--header-bg);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: var(--transition);
+                z-index: 1000;
+                padding: 50px 0;
             }
             
-            .mobile-menu {
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links li {
+                margin: 20px 0;
+            }
+            
+            .mobile-menu-btn {
                 display: block;
-            }
-            
-            .section-title {
-                font-size: 2.2rem;
             }
             
             .control-buttons {
                 margin-right: auto;
                 margin-left: 20px;
             }
+        }
+        
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2.2rem;
+            }
             
             .portfolio-grid {
                 grid-template-columns: 1fr;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-text p {
+                font-size: 1.1rem;
+            }
+            
+            .hero-image::before {
+                width: 250px;
+                height: 250px;
+            }
+            
+            .hero-image img {
+                width: 230px;
+                height: 230px;
             }
         }
         
@@ -895,6 +968,15 @@
                 transform: translateY(0);
             }
         }
+        
+        /* تحسينات للوضع الداكن */
+        .dark-mode .form-control {
+            border-color: #2c3e50;
+        }
+        
+        .dark-mode .skill-bar {
+            background: #2c3e50;
+        }
     </style>
 </head>
 <body>
@@ -902,10 +984,14 @@
     <header>
         <div class="container">
             <nav>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
                 <a href="#" class="logo" lang="ar">بورتفوليو<span>.</span></a>
                 <a href="#" class="logo" lang="en">Portfolio<span>.</span></a>
                 
-                <ul class="nav-links">
+                <ul class="nav-links" id="navLinks">
                     <li><a href="#home" lang="ar">الرئيسية</a><a href="#home" lang="en">Home</a></li>
                     <li><a href="#about" lang="ar">عنّي</a><a href="#about" lang="en">About</a></li>
                     <li><a href="#portfolio" lang="ar">أعمالي</a><a href="#portfolio" lang="en">Portfolio</a></li>
@@ -944,9 +1030,11 @@
                     <p lang="en">
                         A 16-year-old web developer and Python programmer from Egypt.
                     </p>
+                    <a href="#portfolio" class="btn" lang="ar">أعمالي</a>
+                    <a href="#portfolio" class="btn" lang="en">My Work</a>
                 </div>
                 <div class="hero-image">
-                    <img src="profile.jpg" alt="صورة شخصية">
+                    <img src="profile.jpg" alt="صورة شخصية" loading="lazy">
                 </div>
             </div>
         </div>
@@ -1042,7 +1130,7 @@
             <div class="portfolio-grid">
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/600x400" alt="مشروع 1">
+                        <img src="https://via.placeholder.com/600x400" alt="مشروع 1" loading="lazy">
                     </div>
                     <div class="portfolio-info">
                         <h3 lang="ar">تصميم متجر إلكتروني</h3>
@@ -1053,7 +1141,7 @@
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/600x400" alt="مشروع 2">
+                        <img src="https://via.placeholder.com/600x400" alt="مشروع 2" loading="lazy">
                     </div>
                     <div class="portfolio-info">
                         <h3 lang="ar">تطبيق جوال</h3>
@@ -1064,7 +1152,7 @@
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/600x400" alt="مشروع 3">
+                        <img src="https://via.placeholder.com/600x400" alt="مشروع 3" loading="lazy">
                     </div>
                     <div class="portfolio-info">
                         <h3 lang="ar">موقع شركة</h3>
@@ -1111,13 +1199,13 @@
                         <div>
                             <h3 lang="ar">العنوان</h3>
                             <h3 lang="en">Address</h3>
-                            <p lang="ar">الرياض، المملكة العربية السعودية</p>
-                            <p lang="en">Riyadh, Saudi Arabia</p>
+                            <p lang="ar">الاسكندرية، مصر</p>
+                            <p lang="en">Alex, Egypt</p>
                         </div>
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form>
+                    <form id="contactForm">
                         <div class="form-group">
                             <label for="name" lang="ar">الاسم</label>
                             <label for="name" lang="en">Name</label>
@@ -1135,6 +1223,7 @@
                         </div>
                         <button type="submit" class="btn" lang="ar">إرسال</button>
                         <button type="submit" class="btn" lang="en">Send</button>
+                        <div class="form-message" id="formMessage"></div>
                     </form>
                 </div>
             </div>
@@ -1213,6 +1302,56 @@
                 top: 0,
                 behavior: 'smooth'
             });
+        });
+
+        // قائمة الجوال
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            
+            if (navLinks.classList.contains('active')) {
+                mobileMenuBtn.innerHTML = '<i class="fas fa-times"></i>';
+            } else {
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        });
+
+        // إغلاق القائمة عند النقر على رابط
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
+        // نموذج الاتصال
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // هنا يمكنك إضافة كود إرسال النموذج إلى الخادم
+            // لأغراض العرض، سنعرض رسالة نجاح فقط
+            
+            const isEnglish = document.body.classList.contains('english');
+            
+            formMessage.textContent = isEnglish 
+                ? 'Your message has been sent successfully!' 
+                : 'تم إرسال رسالتك بنجاح!';
+            formMessage.classList.add('success');
+            formMessage.style.display = 'block';
+            
+            // إخفاء الرسالة بعد 5 ثوان
+            setTimeout(() => {
+                formMessage.style.display = 'none';
+                formMessage.classList.remove('success');
+            }, 5000);
+            
+            // مسح الحقول
+            contactForm.reset();
         });
 
         // تحميل التفضيلات عند بدء التحميل
