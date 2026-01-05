@@ -1,348 +1,493 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Omar Anoss - Web Developer and Python Programmer. Portfolio of projects, web design, and programming.">
-        <meta name="keywords" content="Omar Anoss, Web Developer, Python, Portfolio, Programming, Egypt">
-        <meta name="author" content="Omar Anoss">
-        <meta property="og:title" content="Omar Anoss — Web Developer & Python Programmer">
-        <meta property="og:description" content="Modern web developer and Python programmer creating fast, clean, and professional websites and apps. Explore my projects and skills.">
-        <meta property="og:type" content="website">
-        <title>Omar Anoss | Web Developer & Programmer</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Omar Anoss - Web Developer and Python Programmer. Portfolio of projects, web design, and programming."
+    />
+    <meta
+      name="keywords"
+      content="Omar Anoss, Web Developer, Python, Portfolio, Programming, Egypt"
+    />
+    <meta name="author" content="Omar Anoss" />
+    <meta
+      property="og:title"
+      content="Omar Anoss — Web Developer & Python Programmer"
+    />
+    <meta
+      property="og:description"
+      content="Modern web developer and Python programmer creating fast, clean, and professional websites and apps. Explore my projects and skills."
+    />
+    <meta property="og:type" content="website" />
+    <title>Omar Anoss | Web Developer & Programmer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- الشريط العلوي -->
     <header>
-        <div class="container">
-            <nav>
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <i class="fas fa-bars"></i>
-                </button>
-                
-                <a href="#home" class="logo" lang="ar">بورتفوليو<span>.</span></a>
-                <a href="#home" class="logo" lang="en">Portfolio<span>.</span></a>
-                
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="#home" lang="ar">الرئيسية</a><a href="#home" lang="en">Home</a></li>
-                    <li><a href="#about" lang="ar">عنّي</a><a href="#about" lang="en">About</a></li>
-                    <li><a href="#services" lang="ar">خدماتي</a><a href="#services" lang="en">Services</a></li>
-                    <li><a href="#portfolio" lang="ar">أعمالي</a><a href="#portfolio" lang="en">Portfolio</a></li>
-                    <li><a href="#contact" lang="ar">اتصل بي</a><a href="#contact" lang="en">Contact</a></li>
-                    <li>
-                        <div class="control-buttons">
-                            <div class="language-switcher" id="languageSwitcher">
-                                <div class="language-option language-active" data-lang="ar">العربية</div>
-                                <div class="language-option" data-lang="en">English</div>
-                            </div>
-                            <div class="theme-switcher" id="themeSwitcher">
-                                <div class="theme-switcher-thumb"></div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <nav>
+          <button class="mobile-menu-btn" id="mobileMenuBtn" title="menu">
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <a href="#home" class="logo" lang="ar">بورتفوليو<span>.</span></a>
+          <a href="#home" class="logo" lang="en">Portfolio<span>.</span></a>
+
+          <ul class="nav-links" id="navLinks">
+            <li>
+              <a href="#home" lang="ar">الرئيسية</a>
+              <a href="#home" lang="en">Home</a>
+            </li>
+            <li>
+              <a href="#about" lang="ar">عنّي</a>
+              <a href="#about" lang="en">About</a>
+            </li>
+            <li>
+              <a href="#services" lang="ar">خدماتي</a>
+              <a href="#services" lang="en">Services</a>
+            </li>
+            <li>
+              <a href="#portfolio" lang="ar">أعمالي</a>
+              <a href="#portfolio" lang="en">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact" lang="ar">اتصل بي</a>
+              <a href="#contact" lang="en">Contact</a>
+            </li>
+            <li>
+              <div class="control-buttons">
+                <div class="language-switcher" id="languageSwitcher">
+                  <div class="language-option language-active" data-lang="ar">
+                    العربية
+                  </div>
+                  <div class="language-option" data-lang="en">English</div>
+                </div>
+                <div class="theme-switcher" id="themeSwitcher">
+                  <div class="theme-switcher-thumb"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- شريط تقدم التمرير -->
     <div class="progress-container">
-        <div class="progress-bar" id="progressBar"></div>
+      <div class="progress-bar" id="progressBar"></div>
     </div>
 
     <!-- زر العودة لأعلى -->
     <div class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
+      <i class="fas fa-arrow-up"></i>
     </div>
 
     <!-- قسم البداية -->
     <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 lang="ar">مرحباً، أنا <span style="background: var(--myName); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent;">عمر عنوس</span></h1>
-                    <h1 lang="en">Hello, I'm <span style="background: var(--myName); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent;">Omar Anoss</span></h1>
-                    <p lang="ar" class="typewriter">
-                        مطور ويب ومبرمج Python من مصر، عمري 16 سنة. 
-                    </p>
-                    <p lang="en" class="typewriter">
-                        A 16-year-old web developer and Python programmer from Egypt.
-                    </p>
-                    <a href="#portfolio" class="btn" lang="ar">أعمالي</a>
-                    <a href="#portfolio" class="btn" lang="en">My Work</a>
-                </div>
-                <div class="hero-image">
-                    <img src="profile.webp" alt="Omar Anoss Personal Photo" loading="lazy" width="350" height="350">
-                </div>
-            </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 lang="ar">
+              مرحباً، أنا
+              <span class="name-gradient">عمر عنوس</span>
+            </h1>
+            <h1 lang="en">
+              Hello, I'm
+              <span class="name-gradient">Omar Anoss</span>
+            </h1>
+            <p lang="ar" class="typewriter">
+              مطور ويب ومبرمج Python من مصر، عمري 16 سنة.
+            </p>
+            <p lang="en" class="typewriter">
+              A 16-year-old web developer and Python programmer from Egypt.
+            </p>
+            <a href="#portfolio" class="btn" lang="ar">أعمالي</a>
+            <a href="#portfolio" class="btn" lang="en">My Work</a>
+          </div>
+          <div class="hero-image">
+            <img
+              src="profile.webp"
+              alt="Omar Anoss Personal Photo"
+              loading="lazy"
+              width="350"
+              height="350"
+            />
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- قسم عني -->
     <section id="about">
-        <div class="container">
-            <h2 class="section-title" lang="ar">عنّي</h2>
-            <h2 class="section-title" lang="en">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p lang="ar">
-                        اسمي عمر، عمري 16 سنة، وأهتم بمجالات متعددة في الحياة العملية والرياضية.  
-                        أمتلك خبرة في <strong>البرمجة</strong> خاصة بلغة Python وتصميم مواقع الويب باستخدام HTML و CSS و JavaScript و PHP وربطها بقواعد البيانات MySQL.  
-                        كما أعمل على مشاريع تعليمية وتقنية مثل منصة "الأزهري" التي تهدف إلى تنظيم المواد والدروس للطلاب.  
-                    </p>
-                    <p lang="ar">
-                        من الناحية الرياضية، أمارس <strong>الكاليثنكس</strong> وأتقن حركات متقدمة مثل L-sit، Front Lever، Handstand Push-ups وغيرها،  
-                        بالإضافة إلى اهتمامي برياضة <strong>ركوب الدراجات</strong> وهدفي تطوير نفسي فيها بشكل احترافي.  
-                        كذلك لدي خبرة في <strong>الملاكمة</strong> وأمارسها كهواية.  
-                    </p>
-                    <p lang="ar">
-                        أقرأ باستمرار في مجالات <strong>التكنولوجيا والطاقة المتجددة</strong>،  
-                        وأسعى لتطوير أفكاري في إنشاء مشاريع ذكية مثل أنظمة توفير الكهرباء وزيادة كفاءة المحلات التجارية.  
-                    </p>
-                    <p lang="en">
-                        I’m Omar, a programmer and web designer experienced in Python, PHP, and MySQL. I have strong skills in creating fast and simple user interfaces using HTML, CSS, and JavaScript.
-                    </p>
-                    <P lang="en">
-                        Besides coding, I’m passionate about sports like cycling, calisthenics, and boxing, and I constantly work on improving myself both physically and mentally.
-                    </P>
-                    <p lang="en">
-                        I also have experience in computer maintenance and a deep interest in technology and renewable energy.
-                    </p>
-                </div>
-                <div class="about-skills">
-                    <div class="skill">
-                        <div class="skill-name">
-                            <span lang="ar">HTML & CSS</span><span lang="en">HTML & CSS</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="95%"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-name">
-                            <span lang="ar">JavaScript</span><span lang="en">JavaScript</span>
-                            <span>78%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="78%"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-name">
-                            <span lang="ar">React.js</span><span lang="en">React.js</span>
-                            <span>6%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="06%"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-name">
-                            <span lang="ar">Python</span><span lang="en">Python</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="95%"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-name">
-                            <span lang="ar">PHP</span><span lang="en">PHP</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" data-level="85%"></div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title" lang="ar">عنّي</h2>
+        <h2 class="section-title" lang="en">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p lang="ar">
+              اسمي عمر، عمري 16 سنة، وأهتم بمجالات متعددة في الحياة العملية
+              والرياضية. أمتلك خبرة في <strong>البرمجة</strong> خاصة بلغة Python
+              وتصميم مواقع الويب باستخدام HTML و CSS و JavaScript و PHP وربطها
+              بقواعد البيانات MySQL. كما أعمل على مشاريع تعليمية وتقنية مثل منصة
+              "الأزهري" التي تهدف إلى تنظيم المواد والدروس للطلاب.
+            </p>
+            <p lang="ar">
+              من الناحية الرياضية، أمارس <strong>الكاليثنكس</strong> وأتقن حركات
+              متقدمة مثل L-sit، Front Lever، Handstand Push-ups وغيرها، بالإضافة
+              إلى اهتمامي برياضة <strong>ركوب الدراجات</strong> وهدفي تطوير نفسي
+              فيها بشكل احترافي. كذلك لدي خبرة في
+              <strong>الملاكمة</strong> وأمارسها كهواية.
+            </p>
+            <p lang="ar">
+              أقرأ باستمرار في مجالات
+              <strong>التكنولوجيا والطاقة المتجددة</strong>، وأسعى لتطوير أفكاري
+              في إنشاء مشاريع ذكية مثل أنظمة توفير الكهرباء وزيادة كفاءة المحلات
+              التجارية.
+            </p>
+            <p lang="en">
+              I’m Omar, a programmer and web designer experienced in Python,
+              PHP, and MySQL. I have strong skills in creating fast and simple
+              user interfaces using HTML, CSS, and JavaScript.
+            </p>
+            <p lang="en">
+              Besides coding, I’m passionate about sports like cycling,
+              calisthenics, and boxing, and I constantly work on improving
+              myself both physically and mentally.
+            </p>
+            <p lang="en">
+              I also have experience in computer maintenance and a deep interest
+              in technology and renewable energy.
+            </p>
+          </div>
+          <div class="about-skills">
+            <div class="skill">
+              <div class="skill-name">
+                <span lang="ar">HTML & CSS</span
+                ><span lang="en">HTML & CSS</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-level" data-level="95%"></div>
+              </div>
             </div>
+            <div class="skill">
+              <div class="skill-name">
+                <span lang="ar">JavaScript</span
+                ><span lang="en">JavaScript</span>
+                <span>78%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-level" data-level="78%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">
+                <span lang="ar">Laravel</span><span lang="en">Laravel</span>
+                <span>70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-level" data-level="70%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">
+                <span lang="ar">Python</span><span lang="en">Python</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-level" data-level="95%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">
+                <span lang="ar">PHP</span><span lang="en">PHP</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-level" data-level="85%"></div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- قسم الخدمات -->
     <section id="services">
-        <div class="container">
-            <h2 class="section-title" lang="ar">خدماتي</h2>
-            <h2 class="section-title" lang="en">My Services</h2>
-            <div class="services-grid">
-                <div class="service-item">
-                    <div class="service-icon">
-                        <i class="fas fa-gamepad"></i>
-                    </div>
-                    <h3 lang="ar">ألعاب الفيديو</h3>
-                    <h3 lang="en">Video Games</h3>
-                    <p lang="ar">برمجة وتطوير ألعاب ثنائية الأبعاد ممتعة وجذابة</p>
-                    <p lang="en">Programming and developing engaging 2D games</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3 lang="ar">تطوير الويب</h3>
-                    <h3 lang="en">Web Development</h3>
-                    <p lang="ar">تصميم وتطوير مواقع ويب متجاوبة وسريعة باستخدام أحدث التقنيات</p>
-                    <p lang="en">Design and development of responsive and fast websites using the latest technologies</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3 lang="ar">قواعد البيانات</h3>
-                    <h3 lang="en">Database Design</h3>
-                    <p lang="ar">تصميم وإدارة قواعد البيانات بكفاءة وأمان</p>
-                    <p lang="en">Efficient and secure database design and management</p>
-                </div>
+      <div class="container">
+        <h2 class="section-title" lang="ar">خدماتي</h2>
+        <h2 class="section-title" lang="en">My Services</h2>
+        <div class="services-grid">
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-gamepad"></i>
             </div>
+            <h3 lang="ar">ألعاب الفيديو</h3>
+            <h3 lang="en">Video Games</h3>
+            <p lang="ar">برمجة وتطوير ألعاب ثنائية الأبعاد ممتعة وجذابة</p>
+            <p lang="en">Programming and developing engaging 2D games</p>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 lang="ar">تطوير الويب</h3>
+            <h3 lang="en">Web Development</h3>
+            <p lang="ar">
+              تصميم وتطوير مواقع ويب متجاوبة وسريعة باستخدام أحدث التقنيات
+            </p>
+            <p lang="en">
+              Design and development of responsive and fast websites using the
+              latest technologies
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3 lang="ar">قواعد البيانات</h3>
+            <h3 lang="en">Database Design</h3>
+            <p lang="ar">تصميم وإدارة قواعد البيانات بكفاءة وأمان</p>
+            <p lang="en">Efficient and secure database design and management</p>
+          </div>
         </div>
+      </div>
     </section>
-
 
     <!-- قسم الأعمال -->
     <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2 class="section-title" lang="ar">أعمالي</h2>
-            <h2 class="section-title" lang="en">My Portfolio</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="py_to_exe.webp" alt="مشروع 1" loading="lazy" width="600" height="400">
-                    </div>
-                    <div class="portfolio-info">
-                        <h3 lang="ar">محول بايثون إلى EXE</h3>
-                        <h3 lang="en">Python to EXE Converter</h3>
-                        <p lang="ar">برنامج سطح مكتب بسيط يسمح لك بتحويل ملفات بايثون (.py) إلى ملفات تنفيذية (.exe) بسهولة، مع خيارات تخصيص الأيقونة وإخفاء نافذة الكونسول.</p>
-                        <p lang="en">A simple desktop application that lets you convert Python files (.py) to executable files (.exe) easily, with options to customize the icon and hide the console window.</p>
-                        <div class="project-buttons">
-                            <a href="https://github.com/omaranos517/Python-to-EXE-Converter/releases/download/v1.0/Python-to-EXE-Converter.V1.0.zip" class="project-btn demo-btn">
-                                <i class="fas fa-external-link-alt"></i>
-                                <span lang="ar">تحميل</span>
-                                <span lang="en">Download</span>
-                            </a>
-                            <a href="https://github.com/omaranos517/Python-to-EXE-Converter" class="project-btn code-btn">
-                                <i class="fab fa-github"></i>
-                                <span lang="ar">عرض الكود</span>
-                                <span lang="en">View Code</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="File_Organizer_App.webp" alt="مشروع 2" loading="lazy" width="600" height="400">
-                    </div>
-                    <div class="portfolio-info">
-                        <h3 lang="ar">تطبيق تنظيم الملفات</h3>
-                        <h3 lang="en">File Organizer App</h3>
-                        <p lang="ar">تطبيق سطح مكتب بواجهة رسومية يساعد على تنظيم الملفات داخل مجلد الـ Downloads عن طريق نقل أو نسخ الملفات إلى مجلدات مخصصة (صور، فيديو، صوتيات، مستندات، ملفات مضغوطة، أخرى). يدعم خاصية الإيقاف المؤقت، شريط تقدم، وعرض إحصائيات حجم الملفات.</p>
-                        <p lang="en">A desktop application with a graphical interface that helps organize files within the Downloads folder by moving or copying files to designated folders (Images, Videos, Audio, Documents, Compressed Files, Others). It supports pause functionality, a progress bar, and displays statistics on file sizes.</p>
-                        <div class="project-buttons">
-                            <a href="https://github.com/omaranos517/File-Organizer/releases/download/v1.0/File.Organizer.App.rar" class="project-btn demo-btn">
-                                <i class="fas fa-external-link-alt"></i>
-                                <span lang="ar">تحميل</span>
-                                <span lang="en">Download</span>
-                            </a>
-                            <a href="https://github.com/omaranos517/File-Organizer" class="project-btn code-btn">
-                                <i class="fab fa-github"></i>
-                                <span lang="ar">عرض الكود</span>
-                                <span lang="en">View Code</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title" lang="ar">أعمالي</h2>
+        <h2 class="section-title" lang="en">My Portfolio</h2>
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img
+                src="py_to_exe.webp"
+                alt="مشروع 1"
+                loading="lazy"
+                width="600"
+                height="400"
+              />
             </div>
+            <div class="portfolio-info">
+              <h3 lang="ar">محول بايثون إلى EXE</h3>
+              <h3 lang="en">Python to EXE Converter</h3>
+              <p lang="ar">
+                برنامج سطح مكتب بسيط يسمح لك بتحويل ملفات بايثون (.py) إلى ملفات
+                تنفيذية (.exe) بسهولة، مع خيارات تخصيص الأيقونة وإخفاء نافذة
+                الكونسول.
+              </p>
+              <p lang="en">
+                A simple desktop application that lets you convert Python files
+                (.py) to executable files (.exe) easily, with options to
+                customize the icon and hide the console window.
+              </p>
+              <div class="project-buttons">
+                <a
+                  href="https://github.com/omaranos517/Python-to-EXE-Converter/releases/download/v1.0/Python-to-EXE-Converter.V1.0.zip"
+                  class="project-btn demo-btn"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  <span lang="ar">تحميل</span>
+                  <span lang="en">Download</span>
+                </a>
+                <a
+                  href="https://github.com/omaranos517/Python-to-EXE-Converter"
+                  class="project-btn code-btn"
+                >
+                  <i class="fab fa-github"></i>
+                  <span lang="ar">عرض الكود</span>
+                  <span lang="en">View Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img
+                src="File_Organizer_App.webp"
+                alt="مشروع 2"
+                loading="lazy"
+                width="600"
+                height="400"
+              />
+            </div>
+            <div class="portfolio-info">
+              <h3 lang="ar">تطبيق تنظيم الملفات</h3>
+              <h3 lang="en">File Organizer App</h3>
+              <p lang="ar">
+                تطبيق سطح مكتب بواجهة رسومية يساعد على تنظيم الملفات داخل مجلد
+                الـ Downloads عن طريق نقل أو نسخ الملفات إلى مجلدات مخصصة (صور،
+                فيديو، صوتيات، مستندات، ملفات مضغوطة، أخرى). يدعم خاصية الإيقاف
+                المؤقت، شريط تقدم، وعرض إحصائيات حجم الملفات.
+              </p>
+              <p lang="en">
+                A desktop application with a graphical interface that helps
+                organize files within the Downloads folder by moving or copying
+                files to designated folders (Images, Videos, Audio, Documents,
+                Compressed Files, Others). It supports pause functionality, a
+                progress bar, and displays statistics on file sizes.
+              </p>
+              <div class="project-buttons">
+                <a
+                  href="https://github.com/omaranos517/File-Organizer/releases/download/v1.0/File.Organizer.App.rar"
+                  class="project-btn demo-btn"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  <span lang="ar">تحميل</span>
+                  <span lang="en">Download</span>
+                </a>
+                <a
+                  href="https://github.com/omaranos517/File-Organizer"
+                  class="project-btn code-btn"
+                >
+                  <i class="fab fa-github"></i>
+                  <span lang="ar">عرض الكود</span>
+                  <span lang="en">View Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- قسم اتصل بي -->
     <section id="contact">
-        <div class="container">
-            <h2 class="section-title" lang="ar">اتصل بي</h2>
-            <h2 class="section-title" lang="en">Contact Me</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-info-item">
-                        <div class="contact-info-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div>
-                            <h3 lang="ar">الهاتف</h3>
-                            <h3 lang="en">Phone</h3>
-                            <p>
-                                <a href="tel:+201277633481" class="contact-link" lang="ar">481 633 1277 20+</a>
-                                <a href="tel:+201277633481" class="contact-link" lang="en">+20 1277 633 481</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="contact-info-item">
-                        <div class="contact-info-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h3 lang="ar">البريد الإلكتروني</h3>
-                            <h3 lang="en">Email</h3>
-                            <p>
-                                <a href="mailto:omaranos517@gmail.com" class="contact-link">omaranos517@gmail.com</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="contact-info-item">
-                        <div class="contact-info-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h3 lang="ar">العنوان</h3>
-                            <h3 lang="en">Address</h3>
-                            <p lang="ar">الاسكندرية، مصر</p>
-                            <p lang="en">Alex, Egypt</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm" action="https://formspree.io/f/mwpnakvl" method="POST">
-                        <div class="form-group">
-                            <label for="name" lang="ar">الاسم</label>
-                            <label for="name" lang="en">Name</label>
-                            <input type="text" id="name" name="name" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email" lang="ar">البريد الإلكتروني</label>
-                            <label for="email" lang="en">Email</label>
-                            <input type="email" id="email" name="email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message" lang="ar">الرسالة</label>
-                            <label for="message" lang="en">Message</label>
-                            <textarea id="message" name="message" class="form-control" required></textarea>
-                        </div>
-                        <button type="submit" class="btn" lang="ar">إرسال</button>
-                        <button type="submit" class="btn" lang="en">Send</button>
-                        <div class="form-message" id="formMessage"></div>
-                    </form>
-                </div>
+      <div class="container">
+        <h2 class="section-title" lang="ar">اتصل بي</h2>
+        <h2 class="section-title" lang="en">Contact Me</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <h3 lang="ar">الهاتف</h3>
+                <h3 lang="en">Phone</h3>
+                <p>
+                  <a href="tel:+201277633481" class="contact-link" lang="ar"
+                    >481 633 1277 20+</a
+                  >
+                  <a href="tel:+201277633481" class="contact-link" lang="en"
+                    >+20 1277 633 481</a
+                  >
+                </p>
+              </div>
             </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h3 lang="ar">البريد الإلكتروني</h3>
+                <h3 lang="en">Email</h3>
+                <p>
+                  <a href="mailto:omaranos517@gmail.com" class="contact-link"
+                    >omaranos517@gmail.com</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h3 lang="ar">العنوان</h3>
+                <h3 lang="en">Address</h3>
+                <p lang="ar">الاسكندرية، مصر</p>
+                <p lang="en">Alex, Egypt</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form
+              id="contactForm"
+              action="https://formspree.io/f/mwpnakvl"
+              method="POST"
+            >
+              <div class="form-group">
+                <label for="name" lang="ar">الاسم</label>
+                <label for="name" lang="en">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email" lang="ar">البريد الإلكتروني</label>
+                <label for="email" lang="en">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message" lang="ar">الرسالة</label>
+                <label for="message" lang="en">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-control"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn" lang="ar">إرسال</button>
+              <button type="submit" class="btn" lang="en">Send</button>
+              <div class="form-message" id="formMessage"></div>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- الفوتر -->
     <footer>
-        <div class="container">
-            <div class="social-links">
-                <a href="https://web.facebook.com/omaranos517"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/omar_anos517"><i class="fab fa-instagram"></i></a>
-                <a href="https://wa.me/201277633481"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://github.com/omaranos517/"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-            <p lang="ar">© 2025 جميع الحقوق محفوظة | تم التصميم بواسطة عمر عنوس</p>
-            <p lang="en">© 2025 All Rights Reserved | Designed by Omar Anoss</p>
-            <p><a href="https://github.com/omaranos517/">github</a> | <a href="mailto:omaranos517@gmail.com">Email</a></p>
+      <div class="container">
+        <div class="social-links">
+          <a href="https://web.facebook.com/omaranos517" title="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/omar_anos517" title="instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/201277633481" title="Whatsapp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="https://github.com/omaranos517/" title="Github">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#"><i class="fab fa-linkedin-in" title="Linkedin"></i></a>
         </div>
+        <p lang="ar">© 2025 جميع الحقوق محفوظة | تم التصميم بواسطة عمر عنوس</p>
+        <p lang="en">© 2025 All Rights Reserved | Designed by Omar Anoss</p>
+        <p>
+          <a href="https://github.com/omaranos517/">github</a> |
+          <a href="mailto:omaranos517@gmail.com">Email</a>
+        </p>
+      </div>
     </footer>
 
     <script src="script.js" defer></script>
-</body>
+  </body>
 </html>
