@@ -350,6 +350,10 @@ button {
   box-shadow: var(--shadow-hover);
 }
 
+.back-to-top i {
+  font-size: 1.2rem;
+}
+
 /* *!hero section */
 .hero {
   height: 100vh;
@@ -962,9 +966,14 @@ footer::before {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
   transition: var(--transition);
   position: relative;
   overflow: hidden;
+}
+
+.social-links a i {
+  font-size: 1.5rem;
 }
 
 .social-links a::before {
@@ -987,6 +996,26 @@ footer::before {
 
 .social-links a:hover::before {
   opacity: 1;
+}
+
+.copyright {
+  font-size: 0.9rem;
+}
+
+.copyright a {
+  background: var(--secondary-color);
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+
+  transition: var(--transition);
+}
+
+.copyright a:hover {
+  background: var(--primary-color);
+  box-shadow: 0 5px 10px rgba(35, 160, 210, 0.4);
 }
 
 /* *? responsive */

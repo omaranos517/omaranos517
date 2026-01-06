@@ -1,5 +1,9 @@
 document.documentElement.classList.remove("no-js");
 
+document.querySelectorAll(".year").forEach((el) => {
+  el.textContent = new Date().getFullYear();
+});
+
 // *! The progress bar logic
 window.addEventListener("scroll", function () {
   const winScroll =
