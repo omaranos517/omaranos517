@@ -1,6 +1,6 @@
 document.documentElement.classList.remove("no-js");
 
-// شريط تقدم التمرير
+// *! The progress bar logic
 window.addEventListener("scroll", function () {
   const winScroll =
     document.body.scrollTop || document.documentElement.scrollTop;
@@ -19,7 +19,7 @@ window.addEventListener("scroll", function () {
     header.style.boxShadow = "var(--shadow)";
   }
 
-  // إظهار أو إخفاء زر العودة لأعلى
+  // ** The Back To Top display and hide logic
   const backToTop = document.getElementById("backToTop");
   if (window.scrollY > 500) {
     backToTop.classList.add("visible");
@@ -28,20 +28,20 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// تبديل اللغة
+// *! The language switcher
 document
   .getElementById("languageSwitcher")
   .addEventListener("click", function (e) {
     if (e.target.classList.contains("language-option")) {
       const lang = e.target.dataset.lang;
 
-      // تحديث حالة الأزرار
+      // ** Update buttons states
       document.querySelectorAll(".language-option").forEach((opt) => {
         opt.classList.remove("language-active");
       });
       e.target.classList.add("language-active");
 
-      // تغيير لغة الصفحة
+      // ** Update the language
       if (lang === "en") {
         document.body.classList.add("english");
         document.documentElement.setAttribute("dir", "ltr");
@@ -50,12 +50,12 @@ document
         document.documentElement.setAttribute("dir", "rtl");
       }
 
-      // حفظ التفضيل في localStorage
+      // ** Save the language in localStorage
       localStorage.setItem("preferredLanguage", lang);
     }
   });
 
-// تبديل الوضع الداكن
+// *! The theme switcher
 document.getElementById("themeSwitcher").addEventListener("click", function () {
   document.body.classList.toggle("dark-mode");
   localStorage.setItem(
@@ -64,7 +64,7 @@ document.getElementById("themeSwitcher").addEventListener("click", function () {
   );
 });
 
-// زر العودة لأعلى
+// *! The back to top button
 document.getElementById("backToTop").addEventListener("click", function () {
   window.scrollTo({
     top: 0,
@@ -72,7 +72,7 @@ document.getElementById("backToTop").addEventListener("click", function () {
   });
 });
 
-// قائمة الجوال
+// *! The mobile menu
 const mobileMenuBtn = document.getElementById("mobileMenuBtn");
 const navLinks = document.getElementById("navLinks");
 
@@ -86,7 +86,7 @@ mobileMenuBtn.addEventListener("click", function () {
   }
 });
 
-// إغلاق القائمة عند النقر على رابط
+// *! Close the mobile menu when a link is clicked
 document.querySelectorAll(".nav-links a").forEach((link) => {
   link.addEventListener("click", function () {
     navLinks.classList.remove("active");
@@ -94,21 +94,21 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
   });
 });
 
-// نموذج الاتصال
+// *! The contact form
 const contactForm = document.getElementById("contactForm");
 const formMessage = document.getElementById("formMessage");
 
 document
   .getElementById("contactForm")
   .addEventListener("submit", async function (e) {
-    e.preventDefault(); // منع إعادة تحميل الصفحة
+    e.preventDefault(); // ** منع إعادة تحميل الصفحة
     const form = e.target;
     const formMessage = document.getElementById("formMessage");
 
-    // الحصول على اللغة الحالية
+    // ** import the language from localStorage
     const isEnglish = document.body.classList.contains("english");
 
-    // إظهار رسالة تحميل
+    // ** Show the loading message
     formMessage.textContent = isEnglish ? "Sending..." : "جاري الإرسال...";
     formMessage.className = "form-message";
     formMessage.style.display = "block";
@@ -140,7 +140,7 @@ document
     }
   });
 
-// تحميل التفضيلات عند بدء التحميل
+// *! import localStorage
 document.addEventListener("DOMContentLoaded", function () {
   const preferredLanguage = localStorage.getItem("preferredLanguage") || "en";
   const darkMode = localStorage.getItem("darkMode") === "true";
@@ -153,25 +153,25 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.add("dark-mode");
   }
 
-  // تهيئة الرسوم المتحركة للعناصر
+  // ** Start the animations
   initAnimations();
 });
 
-// تأثيرات التمرير والرسوم المتحركة
+// *! The animations
 function initAnimations() {
-  // تأثير التمرير للأقسام
+  // ** Get the elements
   const sections = document.querySelectorAll("section");
   const portfolioItems = document.querySelectorAll(".portfolio-item");
   const skillLevels = document.querySelectorAll(".skill-level");
 
-  // مراقبة ظهور الأقسام
+  // ** Monitor the sections
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("visible");
 
-          // إذا كان القسم هو المهارات، نشغل أشرطة التقدم
+          // ** if the section is the about section, show the skills
           if (entry.target.id === "about") {
             setTimeout(() => {
               skillLevels.forEach((skill) => {
@@ -181,7 +181,7 @@ function initAnimations() {
             }, 300);
           }
 
-          // إذا كان قسم البورتفوليو، نظهر العناصر بتتابع
+          // ** if the section is the portfolio section, show the portfolio
           if (entry.target.id === "portfolio") {
             portfolioItems.forEach((item, index) => {
               setTimeout(() => {
@@ -195,23 +195,23 @@ function initAnimations() {
     { threshold: 0.1 }
   );
 
-  // مراقبة كل قسم
+  // ** Monitor the sections
   sections.forEach((section) => {
     observer.observe(section);
   });
 
-  // تأثيرات للعناصر عند التمرير
+  // ** Scroll animation and effect
   window.addEventListener("scroll", () => {
     const scrolled = window.scrollY;
 
-    // تأثير التحرك للصورة في قسم البداية
+    // ** The hero image
     const heroImage = document.querySelector(".hero-image");
     if (heroImage) {
       heroImage.style.transform = `translateY(${scrolled * 0.1}px)`;
     }
   });
 
-  // إضافة التنقل السلس للروابط
+  // ** The smooth scroll animation for the anchors
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();

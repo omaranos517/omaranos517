@@ -91,7 +91,7 @@ section.visible {
   border-radius: 3px;
 }
 
-/* شريط تقدم التمرير */
+/* *! Progress Bar */
 .progress-container {
   position: fixed;
   top: 97.5px;
@@ -108,7 +108,7 @@ section.visible {
   transition: width 0.3s ease;
 }
 
-/* الشريط العلوي مع تأثيرات */
+/* *! The Header */
 header {
   background-color: var(--header-bg);
   color: white;
@@ -197,7 +197,7 @@ nav {
   color: var(--secondary-color);
 }
 
-/* قائمة الجوال */
+/* *! The Mobile Menu */
 .mobile-menu-btn {
   display: none;
   background: none;
@@ -208,14 +208,14 @@ nav {
   z-index: 1001;
 }
 
-/* أزرار التحكم */
+/* ** The Control Buttons */
 .control-buttons {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-/* زر تبديل اللغة */
+/* ** The Language Switcher */
 .language-switcher {
   display: flex;
   align-items: center;
@@ -245,7 +245,7 @@ nav {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* زر الوضع الداكن */
+/* ** The Theme Switcher */
 .theme-switcher {
   width: 50px;
   height: 26px;
@@ -319,7 +319,7 @@ button {
     color var(--dark-mode-transition), border-color var(--dark-mode-transition);
 }
 
-/* زر العودة لأعلى */
+/* *! The Back To Top Button */
 .back-to-top {
   position: fixed;
   bottom: 30px;
@@ -350,7 +350,7 @@ button {
   box-shadow: var(--shadow-hover);
 }
 
-/* قسم البداية مع رسوم متحركة */
+/* *!hero section */
 .hero {
   height: 100vh;
   display: flex;
@@ -411,6 +411,35 @@ button {
   opacity: 0.9;
 }
 
+/* ** Typewriter Effect */
+.typewriter {
+  overflow: hidden;
+  border-right: 0.15em solid var(--secondary-color);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--secondary-color);
+  }
+}
+
 .hero-image {
   flex: 1;
   text-align: center;
@@ -434,8 +463,8 @@ button {
 
 .name-gradient {
   background: var(--myName);
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
@@ -507,7 +536,7 @@ button {
   transform: translateY(0);
 }
 
-/* قسم about */
+/* *!About Section */
 .about-content {
   display: flex;
   align-items: center;
@@ -530,6 +559,7 @@ button {
   line-height: 1.8;
 }
 
+/* **Skills bar */
 .about-skills {
   flex: 1;
 }
@@ -561,7 +591,7 @@ button {
   transition: width 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-/* قسم portfolio */
+/* *!Portfolio Section */
 .portfolio {
   background: var(--light-color);
   position: relative;
@@ -661,7 +691,7 @@ button {
   color: #ccc;
 }
 
-/* أزرار المشروع */
+/* **The project buttons */
 .project-buttons {
   display: flex;
   gap: 15px;
@@ -716,7 +746,7 @@ button {
   color: white;
 }
 
-/* قسم services */
+/* *! Services Section */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -756,7 +786,7 @@ button {
   color: var(--primary-color);
 }
 
-/* قسم contact */
+/* *! Contact Section */
 .contact-content {
   display: flex;
   gap: 50px;
@@ -894,7 +924,7 @@ textarea.form-control {
   color: var(--secondary-color);
 }
 
-/* footer */
+/* *! footer */
 footer {
   background: var(--dark-color);
   color: white;
@@ -959,7 +989,7 @@ footer::before {
   opacity: 1;
 }
 
-/* responsive */
+/* *? responsive */
 @media (max-width: 992px) {
   .hero-content {
     flex-direction: column-reverse;
@@ -1062,7 +1092,7 @@ footer::before {
   }
 }
 
-/* إظهار وإخفاء المحتوى حسب اللغة */
+/* *? Elements change according to the language */
 [lang="ar"] {
   display: block;
 }
@@ -1109,7 +1139,7 @@ body.english .nav-links a::after {
   }
 }
 
-/* Animations */
+/* *? Animations */
 @keyframes fadeInLeft {
   from {
     opacity: 0;
@@ -1132,12 +1162,12 @@ body.english .nav-links a::after {
   }
 }
 
-/* تأثيرات التمرير */
+/* ** Scroll Effects */
 .skill-animated .skill-level {
   width: var(--skill-level);
 }
 
-/* تأثيرات النصوص */
+/* ** Text Animation */
 .text-animate {
   display: inline-block;
   opacity: 0;
@@ -1155,7 +1185,7 @@ body.english .nav-links a::after {
   }
 }
 
-/* تحسينات للوضع الداكن */
+/* *? Improved Dark Mode */
 .dark-mode .form-control {
   border-color: #2c3e50;
 }
@@ -1172,33 +1202,4 @@ body.english .nav-links a::after {
 .dark-mode .code-btn:hover {
   background: var(--secondary-color);
   color: white;
-}
-
-/* تأثير الكتابة */
-.typewriter {
-  overflow: hidden;
-  border-right: 0.15em solid var(--secondary-color);
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.15em;
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: var(--secondary-color);
-  }
 }
