@@ -1,3 +1,5 @@
+document.documentElement.classList.remove("no-js");
+
 // شريط تقدم التمرير
 window.addEventListener("scroll", function () {
   const winScroll =

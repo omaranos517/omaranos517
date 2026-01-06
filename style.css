@@ -60,6 +60,11 @@ section {
   transition: var(--transition);
 }
 
+.no-js section {
+  opacity: 1;
+  transform: none;
+}
+
 section.visible {
   opacity: 1;
   transform: translateY(0);
@@ -667,6 +672,7 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   padding: 12px 25px;
   border-radius: 50px;
   font-weight: 600;
@@ -674,6 +680,15 @@ button {
   transition: var(--transition);
   font-size: 0.9rem;
   box-shadow: var(--shadow);
+}
+
+.project-btn i {
+  font-size: 1.1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-btn:hover i {
+  transform: scale(1.1);
 }
 
 .demo-btn {
