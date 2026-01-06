@@ -418,6 +418,7 @@ button {
 /* ** Typewriter Effect */
 .typewriter {
   overflow: hidden;
+  max-width: 100%;
   border-right: 0.15em solid var(--secondary-color);
   white-space: nowrap;
   margin: 0 auto;
@@ -509,6 +510,8 @@ button {
   background: var(--gradient);
   color: white;
   text-decoration: none;
+  text-align: center;
+  font-size: 1.2rem;
   border-radius: 50px;
   font-weight: 600;
   transition: var(--transition);
@@ -697,8 +700,9 @@ button {
 
 /* **The project buttons */
 .project-buttons {
+  justify-content: center;
   display: flex;
-  gap: 15px;
+  gap: 20px;
   margin-top: 20px;
 }
 
@@ -1094,6 +1098,47 @@ footer::before {
 }
 
 @media (max-width: 768px) {
+  /* ** the header */
+  header {
+    height: 70px;
+  }
+
+  nav {
+    padding: 15px 0;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+  }
+
+  .mobile-menu-btn {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.8rem;
+    background: rgba(255, 255, 255, 0.1);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+  }
+
+  .mobile-menu-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .progress-container {
+    top: 66px;
+  }
+
   .section-title {
     font-size: 2.2rem;
   }
@@ -1102,22 +1147,76 @@ footer::before {
     grid-template-columns: 1fr;
   }
 
+  /* ** the hero */
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding: 100px 0 50px;
+    margin-top: 70px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .hero-text {
+    padding: 0;
+    text-align: center;
+  }
+
   .hero-text h1 {
     font-size: 2.2rem;
+    line-height: 1.3;
   }
 
   .hero-text p {
     font-size: 1.1rem;
+    white-space: normal; /* إزالة nowrap */
+    overflow: visible;
+    border-right: none; /* إزالة المؤقت */
+    animation: none; /* إيقاف الكتابة */
   }
 
   .hero-image::before {
+    width: 280px;
+    height: 280px;
+  }
+
+  .hero-image img {
     width: 250px;
     height: 250px;
   }
 
-  .hero-image img {
-    width: 230px;
-    height: 230px;
+  .btn {
+    font-size: 1.1rem;
+  }
+
+  /* ** the about */
+  .skill-bar {
+    width: 320px;
+  }
+
+  /* ** footer section */
+  .contact-form {
+    padding: 20px;
+  }
+
+  .contact-form .btn {
+    width: 100%;
+  }
+
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .social-links a {
+    margin: 5px;
+    width: 45px;
+    height: 45px;
   }
 }
 
