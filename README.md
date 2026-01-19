@@ -1,8 +1,7 @@
 ## Hi there 👋 I'm Omar Anoss
 
-I'm a **16-year-old Web Developer & Python Programmer** from **Alexandria, Egypt 🇪🇬**.  
+I'm a Web Developer, Python & Game Programmer from Alexandria, Egypt 🇪🇬
 I enjoy building clean, fast, and well-structured websites and applications.
-
 I focus on learning by **building real projects**, not just following tutorials.
 
 ---
@@ -13,13 +12,18 @@ I focus on learning by **building real projects**, not just following tutorials.
 - 🐍 Python Programmer
 - ⚙️ Currently working with **Laravel**
 - 🧠 Interested in technology, software development, and smart systems
-- 🚀 Always improving my skills step by step
+- 🚀 Focused on continuous improvement and building scalable applications.
 
 ---
 
 ## 🛠️ Skills & Technologies
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Laravel](https://img.shields.io/badge/Laravel-F9322C?style=for-the-badge&logo=laravel&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Godot](https://img.shields.io/badge/Godot-478CBF?style=for-the-badge&logo=godot-engine&logoColor=white)
 
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** PHP, Laravel
@@ -32,10 +36,8 @@ I focus on learning by **building real projects**, not just following tutorials.
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=omaranos517&show_icons=true&theme=tokyonight" />
-</p>
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=omaranos517&layout=compact&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api?username=omaranos517&show_icons=true&theme=tokyonight" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=omaranos517&layout=compact&theme=tokyonight" height="165" />
 </p>
 
 ---
