@@ -81,6 +81,50 @@ I focus on learning by **building real projects**, not just following tutorials.
 
 ---
 
+## test
+<p align="center">
+  <a href="https://github.com/omaranos517" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="32" />
+  </a>
+
+  <a href="https://www.linkedin.com/in/YOUR_USERNAME" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="32" />
+  </a>
+
+  <a href="https://twitter.com/YOUR_USERNAME" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" width="32" />
+  </a>
+
+  <a href="mailto:omaranos517@gmail.com">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" width="32" />
+  </a>
+</p>
+ or 
+ <p align="center">
+  <a href="https://github.com/omaranos517">
+    <img src="https://skillicons.dev/icons?i=github" height="36"/>
+  </a>
+  <a href="https://linkedin.com/in/YOUR_USERNAME">
+    <img src="https://skillicons.dev/icons?i=linkedin" height="36"/>
+  </a>
+  <a href="https://twitter.com/YOUR_USERNAME">
+    <img src="https://skillicons.dev/icons?i=twitter" height="36"/>
+  </a>
+  <a href="mailto:omaranos517@gmail.com">
+    <img src="https://skillicons.dev/icons?i=gmail" height="36"/>
+  </a>
+</p>
+
+
+## 🌟 Fun Fac
+- 🎮 Playing Video Gamest
+- 📚 Reading Books
+- 📺 Watching Movies
+
+---
+
+## 🙏 Thank You
+
 ⭐ Feel free to explore my repositories and follow my journey as a developer.
 
 Thank you for visiting!
