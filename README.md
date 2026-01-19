@@ -34,7 +34,7 @@ I focus on learning by **building real projects**, not just following tutorials.
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** PHP, Laravel
 - **Programming:** Python
-- **Build Games** Godot
+- **Build Games:** Godot
 - **Databases:** MySQL
 - **Tools:** Git, GitHub, VS Code
 
