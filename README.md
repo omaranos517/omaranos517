@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=800&color=38BDF8&center=true&vCenter=true&width=800&lines=Web+Developer;Python+Programmer;Game+Developer+using+Godot;Building+Real+Projects;Always+Learning" />
+</p>
+
 ## Hi there 👋 I'm Omar Anoss
 
 I'm a Web Developer, Python & Game Programmer from Alexandria, Egypt 🇪🇬
