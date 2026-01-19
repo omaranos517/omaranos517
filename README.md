@@ -18,12 +18,24 @@ I focus on learning by **building real projects**, not just following tutorials.
 ---
 
 ## 🛠️ Skills & Technologies
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-F9322C?style=for-the-badge&logo=laravel&logoColor=white)
 
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** PHP, Laravel
 - **Programming:** Python
 - **Databases:** MySQL
 - **Tools:** Git, GitHub, VS Code
+
+---
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=omaranos517&show_icons=true&theme=tokyonight" />
+</p>
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=omaranos517&layout=compact&theme=tokyonight)
 
 ---
 
