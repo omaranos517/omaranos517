@@ -21,14 +21,15 @@ I focus on learning by **building real projects**, not just following tutorials.
 ---
 
 ## 🛠️ Skills & Technologies
+
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Laravel-F9322C?style=for-the-badge&logo=laravel&logoColor=white" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" />
-  <img src="https://img.shields.io/badge/Godot-478CBF?style=for-the-badge&logo=godot-engine&logoColor=white" />
+  <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>
+  <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg"/>
+  <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
+  <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
+  <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
+  <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"/>
+  <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg"/>
 </p>
 
 - **Frontend:** HTML, CSS, JavaScript
@@ -73,16 +74,38 @@ I focus on learning by **building real projects**, not just following tutorials.
 
 ---
 
-## 📫 How to Reach Me
+## 📫 Socials
 
-- 📧 Email: [omaranos517](mailto:omaranos517)
+<p align="center">
+  <a href="mailto:omaranos517@gmail.com" target="_blank">
+    <img src="https://skillicons.dev/icons?i=gmail" height="40" />
+  </a>
+
+  <a href="https://web.facebook.com/omaranos517" target="_blank">
+    <img src="https://skillicons.dev/icons?i=facebook" height="40" />
+  </a>
+
+  <a href="https://wa.me/201277633481" target="_blank">
+    <img src="https://skillicons.dev/icons?i=whatsapp" height="40" />
+  </a>
+
+  <a href="https://www.instagram.com/omar_anos517" target="_blank">
+    <img src="https://skillicons.dev/icons?i=instagram" height="40" />
+  </a>
+</p>
+
+<p align="center">
+  Feel free to reach out — I’m always open to collaboration 🤝
+</p>
+
 
 ---
 
-## 🌟 Fun Fac
-- 🎮 Playing Video Gamest
-- 📚 Reading Books
-- 📺 Watching Movies
+## 🌟 Fun Facts
+
+- 🧠 Learn by building, not watching.
+- 🚀 Turning ideas into real products.
+- ⚙️ System thinker before coder.
 
 ---
 
