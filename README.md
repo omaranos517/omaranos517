@@ -81,6 +81,4 @@ I focus on learning by **building real projects**, not just following tutorials.
 
 Thank you for visiting!
 
-## 🐍 Contribution Snake
-
 ![Snake animation](https://raw.githubusercontent.com/omaranos517/omaranos517/output/github-contribution-grid-snake-dark.svg)
