@@ -34,8 +34,9 @@ I focus on learning by **building real projects**, not just following tutorials.
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=omaranos517&show_icons=true&theme=tokyonight" />
 </p>
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=omaranos517&layout=compact&theme=tokyonight)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=omaranos517&layout=compact&theme=tokyonight" />
+</p>
 
 ---
 
