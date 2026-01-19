@@ -59,8 +59,9 @@ I focus on learning by **building real projects**, not just following tutorials.
   A desktop app that organizes files inside the Downloads folder automatically.  
   👉 https://github.com/omaranos517/File-Organizer
 
-- 🔹 **Personal Portfolio Website**  
-  My personal website showcasing my skills and projects.
+- 🔹 **Educational Platform (In Development)**  
+  A smart educational platform for managing subjects, lessons, videos, files, and interactive questions.  
+  👉 https://github.com/omaranos517/myPlatform
 
 ---
 
