@@ -23,13 +23,13 @@ I focus on learning by **building real projects**, not just following tutorials.
 ## 🛠️ Skills & Technologies
 
 <p align="center">
-  <img height="32" style="margin: 10px;" src="https://laravel.com/img/logomark.min.svg"/>
-  <img height="32" style="margin: 10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
-  <img height="32" style="margin: 10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
-  <img height="32" style="margin: 10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
-  <img height="32" style="margin: 10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"/>
-  <img height="32" style="margin: 10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>
-  <img height="32" style="margin: 10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg"/>
+  <img height="32" style="margin: 20px;" src="https://laravel.com/img/logomark.min.svg"/>
+  <img height="32" style="margin: 20px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
+  <img height="32" style="margin: 20px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
+  <img height="32" style="margin: 20px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
+  <img height="32" style="margin: 20px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"/>
+  <img height="32" style="margin: 20px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>
+  <img height="32" style="margin: 20px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg"/>
 </p>
 
 - **Frontend:** HTML, CSS, JavaScript
@@ -78,26 +78,20 @@ I focus on learning by **building real projects**, not just following tutorials.
 
 <p align="center">
   <a href="mailto:omaranos517@gmail.com" target="_blank">
-    <img src="https://skillicons.dev/icons?i=gmail" height="40" />
+    <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" />
   </a>
-
   <a href="https://web.facebook.com/omaranos517" target="_blank">
     <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" />
   </a>
-
   <a href="https://wa.me/201277633481" target="_blank">
-    <img src="https://skillicons.dev/icons?i=whatsapp" height="40" />
+    <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/whatsapp/whatsapp-original.svg" />
   </a>
-
   <a href="https://www.instagram.com/omar_anos517" target="_blank">
-    <img src="https://skillicons.dev/icons?i=instagram" height="40" />
+    <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/instagram/instagram-original.svg" />
   </a>
-</p>
 
-<p align="center">
   Feel free to reach out — I’m always open to collaboration 🤝
 </p>
-
 
 ---
 
