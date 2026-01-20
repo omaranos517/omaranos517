@@ -77,22 +77,31 @@ I focus on learning by **building real projects**, not just following tutorials.
 ## 📫 Socials
 
 <p align="center">
+  <!-- Gmail -->
   <a href="mailto:omaranos517@gmail.com" target="_blank">
-    <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" />
+    <img height="32" alt="Gmail" src="https://cdn.simpleicons.org/gmail/EA4335" />
   </a>
+  <!-- Facebook -->
   <a href="https://web.facebook.com/omaranos517" target="_blank">
-    <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" />
+    <img height="32" alt="Facebook" src="https://cdn.simpleicons.org/facebook/1877F2" />
   </a>
+  <!-- WhatsApp -->
   <a href="https://wa.me/201277633481" target="_blank">
-    <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/whatsapp/whatsapp-original.svg" />
+    <img height="32" alt="WhatsApp" src="https://cdn.simpleicons.org/whatsapp/25D366" />
   </a>
+  <!-- Instagram -->
   <a href="https://www.instagram.com/omar_anos517" target="_blank">
-    <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/instagram/instagram-original.svg" />
+    <img height="32" alt="Instagram" src="https://cdn.simpleicons.org/instagram/E4405F" />
   </a>
 </p>
 
 <p align="center">
   Feel free to reach out — I’m always open to collaboration 🤝
+</p>
+
+<p align="center">
+  Check out my portfolio: 
+  <a href="https://omaranos517.vercel.app" target="_blank">omaranos517.com</a>
 </p>
 
 ---
