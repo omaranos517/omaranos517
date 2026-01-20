@@ -89,7 +89,9 @@ I focus on learning by **building real projects**, not just following tutorials.
   <a href="https://www.instagram.com/omar_anos517" target="_blank">
     <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/instagram/instagram-original.svg" />
   </a>
+</p>
 
+<p align="center">
   Feel free to reach out — I’m always open to collaboration 🤝
 </p>
 
