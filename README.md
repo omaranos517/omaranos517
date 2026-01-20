@@ -23,13 +23,13 @@ I focus on learning by **building real projects**, not just following tutorials.
 ## 🛠️ Skills & Technologies
 
 <p align="center">
-  <img height="32" src="https://img.shields.io/badge/Laravel-F9322C?style=for-the-badge&logo=laravel&logoColor=white"/>
-  <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
-  <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
-  <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
-  <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"/>
-  <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>
-  <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg"/>
+  <img height="32" style="margin: 10px;" src="https://laravel.com/img/logomark.min.svg"/>
+  <img height="32" style="margin: 10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
+  <img height="32" style="margin: 10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
+  <img height="32" style="margin: 10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
+  <img height="32" style="margin: 10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"/>
+  <img height="32" style="margin: 10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>
+  <img height="32" style="margin: 10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg"/>
 </p>
 
 - **Frontend:** HTML, CSS, JavaScript
@@ -82,7 +82,7 @@ I focus on learning by **building real projects**, not just following tutorials.
   </a>
 
   <a href="https://web.facebook.com/omaranos517" target="_blank">
-    <img src="https://skillicons.dev/icons?i=facebook" height="40" />
+    <img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" />
   </a>
 
   <a href="https://wa.me/201277633481" target="_blank">
