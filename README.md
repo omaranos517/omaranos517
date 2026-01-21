@@ -101,7 +101,7 @@ I focus on learning by **building real projects**, not just following tutorials.
 
 <p align="center">
   Check out my portfolio: 
-  <a href="https://omaranos517.vercel.app" target="_blank">omaranos517.com</a>
+  <a href="https://omaranos517.vercel.app" target="_blank">omaranos517.vercel.app</a>
 </p>
 
 ---
