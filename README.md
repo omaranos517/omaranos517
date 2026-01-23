@@ -48,6 +48,8 @@ I focus on learning by **building real projects**, not just following tutorials.
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=omaranos517&layout=compact&theme=tokyonight" height="165" />
 </p>
 
+![Profile views](https://komarev.com/ghpvc/?username=omaranos517&color=blue)
+
 ---
 
 ## 📌 Featured Projects
