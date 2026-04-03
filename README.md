@@ -52,12 +52,12 @@ I believe in learning by **building real products**, solving real problems, and 
 
 ## 📌 Featured Projects
 - 🔹 **TimeSync app**
-  A lightweight Windows tool for automatic and reliable time synchronization.
+  A lightweight Windows tool that automatically keeps system time accurate.
   👉 https://github.com/omaranos517/AutoSync-WindowsTime
 
-- 🔹 **GNOME Show apps animation**
-    Adds a smooth scale-down click animation to app icons in the Show Apps grid.
-  *(GNOME is a widely used desktop environment for Linux systems)*
+- 🔹 **GNOME Show apps animation**  
+  Adds a smooth scale-down click animation to app icons in the Show Apps grid.  
+  *(GNOME is a widely used desktop environment for Linux systems)*  
   👉 https://github.com/omaranos517/gnome-show-apps-animation
 
 - 🔹 **Python to EXE Converter**  
