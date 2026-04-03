@@ -5,8 +5,8 @@
 ## Hi there 👋 I'm Omar Anoss
 
 I'm a Web Developer, Python & Game Programmer from Alexandria, Egypt 🇪🇬
-I enjoy building clean, fast, and well-structured websites and applications.
-I focus on learning by **building real projects**, not just following tutorials.
+I build clean, efficient, and scalable applications — from web platforms to desktop tools and system-level utilities.
+I believe in learning by **building real products**, solving real problems, and continuously improving my skills.
 
 ---
 
@@ -34,7 +34,7 @@ I focus on learning by **building real projects**, not just following tutorials.
 
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** PHP, Laravel
-- **Programming:** Python
+- **Automation:** Python
 - **Build Games:** Godot
 - **Databases:** MySQL
 - **Tools:** Git, GitHub, VS Code
@@ -51,6 +51,14 @@ I focus on learning by **building real projects**, not just following tutorials.
 ---
 
 ## 📌 Featured Projects
+- 🔹 **TimeSync app**
+  A lightweight Windows tool for automatic and reliable time synchronization.
+  👉 https://github.com/omaranos517/AutoSync-WindowsTime
+
+- 🔹 **GNOME Show apps animation**
+    Adds a smooth scale-down click animation to app icons in the Show Apps grid.
+  *(GNOME is a widely used desktop environment for Linux systems)*
+  👉 https://github.com/omaranos517/gnome-show-apps-animation
 
 - 🔹 **Python to EXE Converter**  
   A desktop application to convert Python scripts into executable files.  
@@ -62,7 +70,7 @@ I focus on learning by **building real projects**, not just following tutorials.
 
 - 🔹 **Educational Platform (In Development)**  
   A smart educational platform for managing subjects, lessons, videos, files, and interactive questions.  
-  👉 https://github.com/omaranos517/myPlatform
+  👉 https://github.com/omaranos517/edu-platform
 
 ---
 
