@@ -51,8 +51,8 @@ I believe in learning by **building real products**, solving real problems, and 
 ---
 
 ## 📌 Featured Projects
-- 🔹 **TimeSync app**
-  A lightweight Windows tool that automatically keeps system time accurate.
+- 🔹 **TimeSync app**  
+  A lightweight Windows tool that automatically keeps system time accurate.  
   👉 https://github.com/omaranos517/AutoSync-WindowsTime
 
 - 🔹 **GNOME Show apps animation**  
