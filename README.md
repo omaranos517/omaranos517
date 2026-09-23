@@ -44,8 +44,8 @@ I believe in learning by **building real products**, solving real problems, and 
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=omaranos517&show_icons=true&theme=tokyonight" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=omaranos517&layout=compact&theme=tokyonight" height="165" />
+  <img src="https://github-readme-stats-psi-blush-88.vercel.app/api?username=omaranos517&show_icons=true&theme=tokyonight" height="165" />
+  <img src="https://github-readme-stats-psi-blush-88.vercel.app/api/top-langs/?username=omaranos517&layout=compact&theme=tokyonight" height="165" />
 </p>
 
 ---
