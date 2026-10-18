@@ -14,8 +14,8 @@ I believe in learning by **building real products**, solving real problems, and 
 
 - 💻 Web Developer (HTML, CSS, JavaScript, PHP)
 - 🐍 Python Programmer
-- ⚙️ Currently working with **Laravel**
-- 🧠 Interested in technology, software development, and smart systems
+- ⚙️ Currently working with **Laravel & Vue.js**
+- 🧠 Interested in technology, software development
 - 🚀 Focused on continuous improvement and building scalable applications.
 
 ---
@@ -24,6 +24,7 @@ I believe in learning by **building real products**, solving real problems, and 
 
 <p align="center">
   <img height="32" style="margin: 20px;" src="https://laravel.com/img/logomark.min.svg"/>
+  <img height="32" style="margin: 20px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"/>
   <img height="32" style="margin: 20px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
   <img height="32" style="margin: 20px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
   <img height="32" style="margin: 20px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
@@ -32,7 +33,7 @@ I believe in learning by **building real products**, solving real problems, and 
   <img height="32" style="margin: 20px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg"/>
 </p>
 
-- **Frontend:** HTML, CSS, JavaScript
+- **Frontend:** Vue.js, HTML, CSS, JavaScript
 - **Backend:** PHP, Laravel
 - **Automation:** Python
 - **Build Games:** Godot
@@ -44,8 +45,8 @@ I believe in learning by **building real products**, solving real problems, and 
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats-psi-blush-88.vercel.app/api?username=omaranos517&show_icons=true&theme=tokyonight" height="165" />
-  <img src="https://github-readme-stats-psi-blush-88.vercel.app/api/top-langs/?username=omaranos517&layout=compact&theme=tokyonight" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api?username=omaranos517&show_icons=true&theme=tokyonight" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=omaranos517&layout=compact&theme=tokyonight" height="165" />
 </p>
 
 ---
